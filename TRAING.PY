@@ -1,90 +1,89 @@
-#######frist project#################
-print("Hello, Enter your age: ")
-# def age():
-#     return int(input()*356)
-# print("Your age in days is: " + age()) fales
-int_age = int(input())
-age_in_days = int_age * 365
-print("Your age in days is: " , age_in_days)
-age_in_months = int_age * 12
-print("Your age in months is: " , age_in_months)
-age_IN_days = int_age *24*365
-print("Your age in hours is: " , age_IN_days)
+LIST=[1,2,3,4,5,6,7,8,9,10]
+i=0
+while i <len(LIST):
+    print(LIST[i])
+    i += 1
 
-#############################
-###################################################################
+i = 0
 
-##gussnubuer##
-import random
-print("🐣Welcome to the number guessing game!")
-number_to_guess = random.randint(1, 10)
-attempt=0
-while True:
-    user_guess = int(input("Enter a number between 1 and 10: "))
-    attempt += 1
-    if user_guess < number_to_guess:
-        print("Too low! Try again.")
-    elif user_guess > number_to_guess:
-        print("Too high! Try again.")
-    else:
-        print(f"😍Congratulations! You've guessed the number {number_to_guess} in {attempt} attempts!")
+while i < 6:
+    i += 1
+
+    if i == 3:
+        continue
+
+    print(i)  
+i = 0
+     
+while i < 6:
+    i += 1
+
+    if i == 3:
         break
-    
-    ##############################################
-    ##pomodoro timer##
-import time
-minutes = int(input("Enter the number of minutes for your Pomodoro session: "))
-seconds = minutes * 60
-while seconds>0:
-      minutes= seconds // 60
-      remaining_seconds = seconds % 60
-      clock = f"{minutes:02d}:{remaining_seconds:02d}"
-      print(clock, end="\r")
-      time.sleep(1)
-      seconds -= 1
-       
-##################33   task   ############################################## 
-task=[]
-print("Welcome to the To-Do List App!")
-while True:
-    print("\nMenu:")
-    print("1. Add a task")
-    print("2. View tasks")
-    print("3. Exit")
-    choice = input("Enter your choice (1/2/3/4): ")
-    
-    if choice == '1':
-        new_task = input("Enter a new task: ")
-        task.append(new_task)
-        print("Task added successfully!")
-    elif choice == '2':
-        if not task:
-            print("No tasks in the list.")
-        else:
-            print("Your Tasks:")
-            if choice=='2':
-                for index, task in enumerate(task, start=1):
-                    print(f"{index}. {task}")
-    elif choice == '3':
-        print("Goodbye!")
-        break
-    else:
-        print("Invalid choice. Please try again.")
-###########################################################
 
-print("enter number:")
-number = int(input())
-if number % 2 == 0:
-    print("The number is even.")
-else:    print("The number is odd.")       
-####################################################
-print("enter 3 number:")
-number1 = int(input("Enter first number: "))
-number2 = int(input("Enter second number: "))
-number3 = int(input("Enter third number: "))
-if number1 > number2 and number1 > number3: 
-    print("The largest number is:", number1)
-elif number2 > number1 and number2 > number3:   
-    print("The largest number is:", number2)
-else:    print("The largest number is:", number3)
-########################################    
+    print(i)     
+##################################
+LIST=[1,2,3,4,5,6,7,8,9,10]
+for i in LIST:
+    print(i)
+    
+    
+    ##########################
+for x in LIST:
+    if x ==3:
+        continue
+    print(x)    
+##################################
+# Create variables to represent one supermarket product.
+# Use the following product:
+
+# . Product code: P101
+# . Product name: Milk
+# . Price: 40 EGP
+# . Quantity in stock: 10
+# Ask the customer to enter the required quantity of Milk.
+# Check the following conditions:
+# . If the quantity is less than or equal to zero, display:
+# Invalid quantity.
+# . If the quantity is greater than the available stock, display:
+# The requested quantity is not available.
+# · Otherwise, display:
+# The product is available.
+# Example
+# Available stock: 10
+# Enter required quantity: 4
+# The product is available. 
+   
+supermarket ={
+    'Product code': 'P101',
+    'Product name': 'milk',
+    'Price': 40,
+    'Quantity in stock': 10  
+}
+input_quantity = int(input("Enter required quantity: "))
+if input_quantity <= 0:
+    print("Invalid quantity.")
+    
+elif input_quantity > supermarket['Quantity in stock']:
+    print("The requested quantity is not available.")
+    
+else:
+    print("The product is available.")
+#######################
+def details(name ,age,gender):
+   input(f'hello {name}, my age {age} ,my gender is {gender}' )
+   
+print(details('ahmed', 20, 'male'))  
+########################################### 
+def detalis ():
+    
+    print('avarable')
+    
+    
+    
+    
+    
+###################### 
+
+
+
